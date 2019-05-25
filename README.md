@@ -1,17 +1,25 @@
-mutation {
-  addUser(username:"123", email:"asd", password: "123"){
-    _id
-    username
-    password
-    email
-  }
-}
-
+#mutation{
+#    addStudent(name:"Gosho", specialty:"BIT", city: "Plovdiv"){
+#      _id,
+#      name,
+#      specialty,
+#      city
+#    },
+#    addUniversity(name: "Plovdivski Universitet", city: "Plovdiv"){
+#      _id,
+#      city
+#  },
+#    }
 query {
-  users {
-    _id
-    username
-    password
+  students {
+    _id,
+    name,
+    specialty,
+    city
+  },
+  universities {
+    _id,
+    name,
+    city
   }
 }
-
